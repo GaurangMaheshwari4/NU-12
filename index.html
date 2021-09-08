@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="GET">
+        <div class="custom-select" style="width:200px;"><select id="stock-dropdown" name="stock-dropdown">
+        </select><br>
+        </div>
+        <input type="date" name="start" id="start" min="2021-04-01" max="2021-07-02">
+        <input type="date" name="end" id="end" min="2021-04-01" max="2021-07-02"><br>
+        <input type="radio" id="open" name="option" value="open">
+        <label for="open">Open</label><br>
+        <input type="radio" id="close" name="option" value="close">
+        <label for="close">Close</label><br>
+        <input type="radio" id="high" name="option" value="high">
+        <label for="high">High</label><br>
+        <input type="radio" id="low" name="option" value="low">
+        <label for="low">Low</label><br>
+        <input type="submit" class="button1">
+        
+    </form>
+    <div>
+        <canvas id="line-chart" width="50px" height="50px"></canvas>
+    </div>
+    <div class="try" style="color: red; font-size: 2rem;  width: 100%;"></div>
+    <div class="try1" style="color: red; font-size: 2rem;  width: 100%; white-space: pre;"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="project.js"></script>
+<script type="text/javascript" src="Stock List.json"></script>
+</body>
+</html>
